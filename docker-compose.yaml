@@ -1,0 +1,11 @@
+version: '3'
+services:
+  react-app:
+    build: ./
+    volumes:
+      - ./sample_code:/sample_code
+    # command: sh -c "cd sample_code && yarn start"
+    ports:
+      - "3000:3000"
+    stdin_open: true 
+    tty: true
