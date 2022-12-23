@@ -1,0 +1,33 @@
+{
+  "extends": [
+    "xo-react"
+  ],
+  "ignores": [
+    "src/vite-env.d.ts"
+  ],
+  "rules": {
+    "unicorn/filename-case": [
+      "error",
+      {
+        "cases": {
+          "pascalCase": true,
+          "camelCase": true
+        }
+      }
+    ],
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": "arrow-function"
+      }
+    ],
+    "import/extensions": "off",
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "max-params": [
+      "error",
+      2
+    ]
+  },
+  "prettier": true
+}
