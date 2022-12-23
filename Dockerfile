@@ -1,3 +1,3 @@
-FROM node:16.17.1-slim
-RUN mkdir /app
-COPY ./app/ /app
+FROM node:16.19-alpin
+RUN mkdir /react-ts
+COPY ./react-ts/ /react-ts
