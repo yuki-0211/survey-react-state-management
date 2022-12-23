@@ -1,3 +1,3 @@
-FROM node:16.18-alpine
-RUN mkdir /sample_code
-COPY ./sample_code/ /sample_code
+FROM node:16.19-alpin
+RUN mkdir /react-ts
+COPY ./react-ts/ /react-ts

@@ -323,6 +323,11 @@
   dependencies:
     "@floating-ui/dom" "^1.0.5"
 
+"@hookstate/core@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@hookstate/core/-/core-4.0.0.tgz#a70ffdc38b7456213b3557789aac28884ea83b97"
+  integrity sha512-l0UNUB4FK/oX+yhMY9JeI6oXlzUUGkXI9E59mFS7TR3HLJao7MQrR2dk4oriMV2Rb5l+6vzXfp1DwhGnq/IgPg==
+
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.8.tgz#03595ac2075a4dc0f191cc2131de14fbd7d410b9"
@@ -572,6 +577,11 @@
   integrity sha512-6Tpkq+R6LOlmQb1R5NNETLG0B4YP0wc+klfXafpUCj6JGyaUc8il7/kUZ7m59rGbXGczE9Bs+iz2qloqsZBduQ==
   dependencies:
     "@babel/runtime" "^7.13.10"
+
+"@rematch/core@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@rematch/core/-/core-2.2.0.tgz#c4e6cc9d369d341afe2345842f43c255b7a44e90"
+  integrity sha512-Sj3nC/2X+bOBZeOf4jdJ00nhCcx9wLbVK9SOs6eFR4Y1qKXqRY0hGigbQgfTpCdjRFlwTHHfN3m41MlNvMhDgw==
 
 "@swc/core-darwin-arm64@1.3.24":
   version "1.3.24"
@@ -2974,9 +2984,9 @@ rimraf@^3.0.2:
     glob "^7.1.3"
 
 rollup@^3.7.0:
-  version "3.8.0"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-3.8.0.tgz#f61dc3ae02467d842687bd55b17a047c93b456ad"
-  integrity sha512-+UR6PnUslneJNiJfLSzy4XH6R50ZGF0MS7UCv20ftXrktF/TkvZDwiBtXX65esblLR5p8w6LmXgPwt2f2B8SoQ==
+  version "3.8.1"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-3.8.1.tgz#d4af8aca7c60d5b8c0281be79ea2fab6b41d458f"
+  integrity sha512-4yh9eMW7byOroYcN8DlF9P/2jCpu6txVIHjEqquQVSx7DI0RgyCCN3tjrcy4ra6yVtV336aLBB3v2AarYAxePQ==
   optionalDependencies:
     fsevents "~2.3.2"
 
