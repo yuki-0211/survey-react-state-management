@@ -1,0 +1,33 @@
+name: Node.js CI
+
+on:
+  push:
+  pull_request:
+
+defaults:
+  run:
+    shell: bash
+    working-directory: ./react-ts
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "yarn"
+          cache-dependency-path: ./react-ts/yarn.lock
+      - name: package install
+        run: yarn install --frozen-lockfile
+      - name: run linter
+        run: yarn run xo
+      - name: run build
+        run: yarn run build
