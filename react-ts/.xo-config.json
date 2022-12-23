@@ -21,6 +21,7 @@
         "namedComponents": "arrow-function"
       }
     ],
+    "n/file-extension-in-import": "off",
     "import/extensions": "off",
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
