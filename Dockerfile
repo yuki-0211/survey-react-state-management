@@ -1,3 +1,3 @@
-FROM node:16.18-alpine
-RUN mkdir /sample_code
-COPY ./sample_code/ /sample_code
+FROM node:16.17.1-slim
+RUN mkdir /app
+COPY ./app/ /app
