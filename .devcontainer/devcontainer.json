@@ -11,29 +11,36 @@
       "VARIANT": "16-bullseye"
     }
   },
-
   // Add the IDs of extensions you want installed when the container is created.
   "extensions": [
     "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode",
-    "csstools.postcss"
+    "csstools.postcss",
+    "samverschueren.linter-xo",
+    "ms-vscode.vscode-typescript-next",
+    "GitHub.copilot",
+    "GitHub.remotehub",
+    "yzhang.markdown-all-in-one",
+    "bierner.markdown-preview-github-styles",
+    "kakumei.ts-debug",
+    "infeng.vscode-react-typescript",
+    "vscodevim.vim",
+    "AndenetAlexander.vim-cheatsheet",
+    "BracketPairColorDLW.bracket-pair-color-dlw",
+    "eamodio.gitlens",
+    "pmneo.tsimporter",
+    "stringham.move-ts"
   ],
-
   // Set *default* container specific settings.json values on container create.
   "settings": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "xo.enable": true,
+    "xo.format.enable": true,
+    "[javascript]": {
+      "editor.defaultFormatter": "samverschueren.linter-xo"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "samverschueren.linter-xo"
+    }
   },
-
-  // "initializeCommand": "cd app",
-
-  // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  // 3000と書かなくても通る
-  // "forwardPorts": [],
-
-  // Use 'postCreateCommand' to run commands after the container is created.
-  // "postCreateCommand": "yarn install",
-
-  // Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
   "remoteUser": "node"
 }
