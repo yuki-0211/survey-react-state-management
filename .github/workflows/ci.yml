@@ -24,9 +24,9 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
-          cache-dependency-path: ./react-ts/yarn.lock
+          cache-dependency-path: ./react-ts/package-lock.json
       - name: package install
-        run: npm install --frozen-lockfile
+        run: npm ci
       - name: run linter
         run: npm run xo
       - name: run build
