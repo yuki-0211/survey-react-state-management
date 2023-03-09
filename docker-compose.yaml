@@ -3,16 +3,10 @@ services:
   react-app:
     build:
       context: .
-      args:
-        - http_proxy=${PROXY}
-        - https_proxy=${PROXY}
     volumes:
-      - ./app:/app
-    command: bash -c "yarn && yarn run dev"
+      - ./react-ts:/react-ts
     working_dir: /react-ts
     ports:
       - "5173:5173"
     stdin_open: true
     tty: true
-    env_file:
-      - .env
