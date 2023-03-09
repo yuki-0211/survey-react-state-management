@@ -23,11 +23,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "yarn"
+          cache: "npm"
           cache-dependency-path: ./react-ts/yarn.lock
       - name: package install
-        run: yarn install --frozen-lockfile
+        run: npm install --frozen-lockfile
       - name: run linter
-        run: yarn run xo
+        run: npm run xo
       - name: run build
-        run: yarn run build
+        run: npm run build
